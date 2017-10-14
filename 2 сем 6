@@ -1,0 +1,20 @@
+<html>
+    <head>
+	</head>
+ <body>
+
+ <form action="http://yandex.ru/search/" method="get">
+	Yandex <input type="text" name = "text" value="">
+    <input type="submit" value="search">
+</form>
+<form action="http://yandex.ru/maps" method="get">
+	Yandexmaps <input type="text" name="text" value="">
+    <input type="submit" value="search">
+</form>
+<form action="http://search1.ruscorpora.ru/search.xml?env=alpha&text=lexform&mode=main&sort=gr_tagging&lang=ru&req=/" method="get">
+	Ruscorpora <input type="text" name="text" value="">
+    <input type="submit" value="search">
+</form>
+</body>
+
+input type="hidden" name value
