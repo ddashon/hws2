@@ -1,0 +1,18 @@
+<html>
+    <head>
+	</head>
+ <body>
+
+ <form action="http://yandex.ru/" method="get">
+	Yandex <input type="text" name = "text" value="">
+    <input type="submit" value="search">
+</form>
+<form action="http://yandex.ru/maps" method="get">
+	Yandexmaps <input type="text" name="text" value="">
+    <input type="submit" value="search">
+</form>
+<form action="http://www.ruscorpora.ru/" method="get">
+	Ruscorpora <input type="text" name="text" value="">
+    <input type="submit" value="search">
+</form>
+</body>
