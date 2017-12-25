@@ -1,21 +1,18 @@
 import os
 import re
-
 import os.path 
 massiv = [] 
-for root, dirs, files in os.walk('file:///C:/Users/student/AppData/Local/Temp/7zO3F7F.tmp/187.44.html'): 
+for root, dirs, files in os.walk('C:\\Users\\student\\Desktop\\ex\\thai_pages\\thai_pages'): 
     for f in files: 
         k = os.path.join(root, f) 
         massiv.append(k)
-
+massiv = ['C:\\Users\\student\\Desktop\\ex\\thai_pages\\thai_pages\\187.33.html']
 
 diction={}
 import json
 for j in massiv: 
     with open (j, 'r', encoding = 'utf-8') as text: 
         text = text.read() 
-
- 
         reges = re.compile('<tr>.*?<a.*?>.*?<.*?<td>.*?</td></tr>') 
         regthai = re.compile('\'>(.*?)</a>') 
         regengl = re.compile('</td><td class.*?</td><td>(.*?)</td></tr>') 
@@ -25,7 +22,6 @@ for j in massiv:
             engl = re.search(regengl, i).group(1) 
             diction[thai] = engl
 
-#task2
 with open ('diction.json', 'w', encoding = 'utf-8') as f: 
         json.dump(diction, f, ensure_ascii = False)
 
